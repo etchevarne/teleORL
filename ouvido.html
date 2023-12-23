@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OTOSIG - TELEDIAG - Ouvido</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sintomas de Ouvido</h1>
+        <p>Por favor, selecione os sintomas principais que está sentindo.</p>
+        <br></br>
+        <div >
+            <form id="sintomasForm">
+                <div id="etapa1" class="etapa">
+                    <label class="checkmark" for="sintoma1">Zumbido
+                        <input type="checkbox" id="sintoma1" class="sintoma" name="sintoma" value="Zumbido">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <label class="checkmark" for="sintoma2">Dor de Ouvido
+                        <input type="checkbox" id="sintoma2" class="sintoma" name="sintoma" value="otalgia">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <label class="checkmark" for="sintoma3">Perda Auditiva/Hipoacusia
+                        <input type="checkbox" id="sintoma3" class="sintoma" name="sintoma" value="Hipoacusia">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <label class="checkmark" for="sintoma4">Vertigem ou Tontura Rotátoria
+                        <input type="checkbox" id="sintoma4" class="sintoma" name="sintoma" value="Vertigem">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <label class="checkmark" for="sintoma5">Secreção/Otorreia
+                        <input type="checkbox" id="sintoma5" class="sintoma" name="sintoma" value="Otorreia">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <label class="checkmark" for="sintoma6">Coceira/Prurido Auricular
+                        <input type="checkbox" id="sintoma6" class="sintoma" name="sintoma" value="Prurido">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <label class="checkmark" for="sintoma7">Ouvido Cheio/Plenitude Auricular
+                        <input type="checkbox" id="sintoma7" name="sintoma7" value="Plenitude">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <label class="checkmark" for="sintoma8">Corpo Estranho/Inseto No ouvido
+                        <input type="checkbox" id="sintoma8" class="sintoma" name="sintoma" value="CorpoEstranho">
+                        <span class="checkmark-box"></span>            
+                    </label>
+                    <button type="button" id="avancarEtapa1" class="button avancar-btn">Avançar</button>
+                                       
+                    </div>
+                    
+                    <div id="etapa2" class="etapa">
+                        <label>Tempo de duração dos sintomas:</label>
+                        <div class="opcoes">
+                            <label>
+                                7 dias ou menos
+                                <input type="radio" class="text-left" name="tempoSintomas" value="7">
+                                <span class="checkmark-box"></span>    
+                            </label>
+                            <label>
+                                Entre 7 e 14 dias
+                                <input type="radio" name="tempoSintomas" value="14">
+                                <span class="checkmark-box"></span>    
+                            </label>
+                            <label>
+                                Entre 14 e 30 dias
+                                <input type="radio" name="tempoSintomas" value="30">
+                                <span class="checkmark-box"></span>  
+                            </label>
+                            <label>
+                                Entre 1 e 2 meses
+                                <input type="radio" name="tempoSintomas" value="60">
+                                <span class="checkmark-box"></span>   
+                            </label>
+                            <label>
+                                Mais de 3 meses
+                                <input type="radio" name="tempoSintomas" value="90">
+                                <span class="checkmark-box"></span>   
+                            </label>
+                        </div>
+                        <button type="button" id="voltarEtapa1" class="button voltar-btn">Voltar</button>
+                        <button type="button" id="avancarEtapa2" class="button avancar-btn">Avançar</button>
+                    </div>
+                    
+                    <div id="etapa3" class="etapa">
+                        <label>Já teve isso antes?</label>
+                        <div class="opcoes">
+                            <label>
+                                Sim
+                                <input type="radio" name="historico" value="sim">
+                                <span class="checkmark-box"></span>    
+                            </label>
+                            <label>
+                                Não
+                                <input type="radio" name="historico" value="não">
+                                <span class="checkmark-box"></span>    
+                            </label>
+                        </div>
+                        <button type="button" id="voltarEtapa2" class="button voltar-btn">Voltar</button>
+                        <button type="button" id="avancarEtapa3" class="button avancar-btn">Avançar</button>
+                    </div>
+                    
+                    
+                    <div id="etapa4" class="etapa">
+                        <label>Faixa etária:</label>
+                        <div class="opcoes">
+                            <label>
+                                Bebê
+                                <input type="radio" name="faixaEtaria" value="bebe">
+                                <span class="checkmark-box"></span>   
+                            </label>
+                            <label>
+                                Criança
+                                <input type="radio" name="faixaEtaria" value="criança">
+                                <span class="checkmark-box"></span>    
+                            </label>
+                            <label>
+                                Adolescente
+                                <input type="radio" name="faixaEtaria" value="adolescente">
+                                <span class="checkmark-box"></span>    
+                            </label>
+                            <label>
+                                Adulto
+                                <input type="radio" name="faixaEtaria" value="adulto">
+                                <span class="checkmark-box"></span>  
+                            </label>
+                            <label>
+                                Idoso
+                                <input type="radio" name="faixaEtaria" value="idoso">
+                                <span class="checkmark-box"></span>  
+                            </label>
+                        </div>
+                        <button type="button" id="voltarEtapa3" class="button voltar-btn">Voltar</button>
+                        <button type="button" id="avancarEtapa4" class="button avancar-btn">Avançar</button>
+                    </div>
+                    
+                    <div id="etapa5" class="etapa">
+                        <label>Exposição frequente à água ou Manipulação do canal auditivo (uso de cotonete)?</label>
+                        <div class="opcoes">
+                            <label>
+                                Sim
+                                <input type="radio" name="exposicaoAgua" value="sim">
+                                <span class="checkmark-box"></span>
+                                
+                            </label>
+                            <label>
+                                Não
+                                <input type="radio" name="exposicaoAgua" value="nao">
+                                <span class="checkmark-box"></span>
+                                
+                            </label>
+                        </div>
+                        <button type="button" id="voltarEtapa4" class="button voltar-btn">Voltar</button>
+                        <button type="button" id="avancarEtapa5" class="button avancar-btn">Avançar</button>
+                    </div>
+                    
+                    
+                    
+                    <div id="etapa6" class="etapa">
+                        <label>Ficou resfriado ou teve algum sintoma nasal nos últimos 14 dias?</label>
+                        <div class="opcoes">
+                            <label>
+                                Sim
+                                <input type="radio" name="resfriadoRecente" value="sim">
+                                <span class="checkmark-box"></span>
+                                
+                            </label>
+                            <label>
+                                Não
+                                <input type="radio" name="resfriadoRecente" value="nao">
+                                <span class="checkmark-box"></span>
+                                
+                            </label>
+                        </div>
+                        <button type="button" id="voltarEtapa5" class="button voltar-btn">Voltar</button>
+                        <button type="button" id="avancarResultado" class="button avancar-btn">Finalizar</button>
+                    </div>
+                                   
+            </form>
+        </div>          
+            <!-- Adicione mais sintomas conforme necessário -->
+            
+        
+        
+        
+        <div id="resultado"></div>
+        <!-- FAZER ESSA PARTE DEPOIS-->
+        <div id="diagnosticodiferencial" class="results"> Diagnóstico Diferencial: </div>
+        <div id="comentário_patologia" class="comments"></div>
+    </div>
+    <script src="ouvido.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <footer>
+    <button id="reiniciar-original" class="button">Reiniciar</button>
+    <button id="voltarInicio">Voltar à Página Inicial</button>
+  </footer>
+  
+</body>
+</html>

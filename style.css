@@ -1,0 +1,258 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #008CBA;
+  border-radius: 25px;
+}
+
+/* Estilos para Containers */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para Cabeçalhos e Parágrafos */
+h1 {
+  text-align: center;
+  color: #5CC6BA;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Estilos para Cards (Links para as páginas de sintomas) */
+.card {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para Alinhamento Central */
+.center-div {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para o Menu (Links para as páginas de sintomas) */
+.menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #04496c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #033354;
+}
+
+/* Estilos para Botões */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Espaçamento para botões de navegação */
+.avancar-btn, .voltar-btn {
+  margin: 0 10px;
+}
+
+/* Estilos Específicos para Botões com cores personalizadas */
+#avancarResultado {
+  background-color: #2ecc40;
+}
+
+#reiniciar-original {
+  background-color: #ff4136;
+}
+
+#voltarInicio {
+  background-color: #ff851b;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para Diagnóstico Diferencial Oculto Inicialmente */
+#diagnosticodiferencial {
+  display: none;
+}
+
+/* Estilos para Checkmarks e Opções (Checkbox e Radio Buttons) */
+.checkmark, .opcoes label {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 2px solid #04496c;
+  cursor: pointer;
+}
+
+.checkmark:hover, .opcoes label:hover {
+  background-color: #ddd;
+}
+
+/* Oculta os inputs e mostra a caixa quando selecionado */
+.checkmark input[type="checkbox"], .opcoes input[type="radio"] {
+  display: none;
+}
+
+.checkmark-box, .opcoes .checkmark-box {
+  margin-left: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #04496c;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark input[type="checkbox"]:checked + span, 
+.opcoes input[type="radio"]:checked + .checkmark-box {
+  background-color: #04496c;
+  border-color: #04496c;
+  color: #fff;
+  font-weight: bold;
+}
+#diagnosticodiferencial {
+  display: none;
+
+}
+#resultado {
+  display: none;
+}
+#resultado {
+  font-family: 'Arial', sans-serif; /* Escolha uma fonte legível */
+  color: #333; /* Uma cor escura para o texto */
+  background-color: #f8f8f8; /* Um fundo claro para o elemento de resultado */
+  padding: 20px; /* Espaçamento interno */
+  margin: 20px 0; /* Espaçamento externo acima e abaixo */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  border: 1px solid #ccc; /* Borda sutil */
+  font-size: 1.1em; /* Tamanho maior da fonte */
+  line-height: 1.6; /* Espaçamento de linha para legibilidade */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos adicionais para os títulos dentro do resultado */
+#resultado h2 {
+  font-size: 1.4em; /* Tamanho maior para títulos */
+  color: #0074d9; /* Cor que destaca os títulos */
+  margin-bottom: 15px; /* Espaçamento abaixo dos títulos */
+}
+
+/* Estilos para botões no rodapé do resultado */
+#resultado .button {
+  margin-top: 20px; /* Espaçamento acima dos botões */
+  width: auto; /* Para evitar que os botões se estendam demais */
+  font-weight: bold; /* Texto em negrito para destacar os botões */
+}
+
+/* Se você tiver um parágrafo ou outro texto explicativo */
+#resultado p {
+  margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+}
+/* Para alinhar o cabeçalho à esquerda */
+h1 {
+  text-align: left;
+}
+
+/* Para alinhar os labels à esquerda */
+.opcoes label {
+  justify-content: start; /* Se você estiver usando flexbox */
+  text-align: left; /* Se não estiver usando flexbox */
+}
+
+/* Se você estiver usando classes do Bootstrap, você pode adicionar 'text-left' ao seu elemento HTML diretamente */
+.opcoes label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Isso coloca o espaço entre o texto e o checkmark-box */
+  padding: 10px;
+  margin-bottom: 10px; /* Espaço entre os labels */
+  cursor: pointer;
+  font-size: 16px; /* Ajuste conforme necessário */
+}
+
+/* Ajuste o estilo do checkmark-box para garantir que ele apareça à direita */
+.opcoes .checkmark-box {
+  margin-left: 10px; /* Espaço entre o texto e o checkmark-box */
+  order: 2; /* Isso garante que o checkmark-box sempre apareça à direita */
+}
+.opcoes label.text-left {
+  text-align: left !important;
+}
+/* Estilo para o Modal */
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 2; /* Fica no topo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Habilita a rolagem se necessário */
+  background-color: rgb(0,0,0); /* Cor de fundo */
+  background-color: rgba(0,0,0,0.4); /* Cor de fundo com opacidade */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% do topo e centralizado horizontalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Poderia ser mais ou menos, dependendo do design */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos adicionais para botões e links aqui... */
