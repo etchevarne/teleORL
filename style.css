@@ -4,13 +4,14 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  color: #A0A0A0
 }
 
 /* Estilos do Rodapé */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #008CBA;
+  background-color: #5CC6BA;
   border-radius: 25px;
 }
 
@@ -58,20 +59,20 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #04496c;
+  background-color: #5CC6BA;
   color: #fff;
   text-decoration: none;
 }
 
 .menu a:hover {
-  background-color: #033354;
+  background-color: #5CC6BA;
 }
 
 /* Estilos para Botões */
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #0074d9;
+  background-color: #5CC6BA;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -93,15 +94,15 @@ p {
 }
 
 #reiniciar-original {
-  background-color: #ff4136;
+  background-color: #5CC6BA;
 }
 
 #voltarInicio {
-  background-color: #ff851b;
+  background-color: #5CC6BA;
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #5CC6BA;
 }
 
 /* Estilo para Diagnóstico Diferencial Oculto Inicialmente */
@@ -117,8 +118,7 @@ p {
   margin-bottom: 15px;
   border-radius: 25px;
   background-color: #f4f4f4;
-  color: #333;
-  border: 2px solid #04496c;
+  border: 2px solid #5CC6BA;
   cursor: pointer;
 }
 
@@ -135,7 +135,7 @@ p {
   margin-left: auto;
   margin-right: 10px;
   border-radius: 50%;
-  border: 2px solid #04496c;
+  border: 2px solid #5CC6BA;
   width: 20px;
   height: 20px;
   display: inline-flex;
@@ -145,8 +145,8 @@ p {
 
 .checkmark input[type="checkbox"]:checked + span, 
 .opcoes input[type="radio"]:checked + .checkmark-box {
-  background-color: #04496c;
-  border-color: #04496c;
+  background-color: #5CC6BA;
+  border-color: #5CC6BA;
   color: #fff;
   font-weight: bold;
 }
@@ -174,7 +174,7 @@ p {
 /* Estilos adicionais para os títulos dentro do resultado */
 #resultado h2 {
   font-size: 1.4em; /* Tamanho maior para títulos */
-  color: #0074d9; /* Cor que destaca os títulos */
+  color: #5CC6BA; /* Cor que destaca os títulos */
   margin-bottom: 15px; /* Espaçamento abaixo dos títulos */
 }
 
@@ -242,7 +242,7 @@ h1 {
 }
 
 .close {
-  color: #aaa;
+  color: #A0A0A0;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -250,7 +250,7 @@ h1 {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #A0A0A0;
   text-decoration: none;
   cursor: pointer;
 }
